@@ -34,25 +34,46 @@ Integrates Docker MCP Gateway with Claude Code, enabling access to containerized
 
 ### Adding the Marketplace
 
-Add this marketplace to Claude Code:
+Add this marketplace to Claude Code using one of the following methods:
 
+**If your git works with SSH:**
 ```bash
-# Local development
-/plugin marketplace add ./claude-marketplace
+/plugin marketplace add docker/claude-marketplace
+```
 
-# Or via git repository
-/plugin marketplace add https://github.com/your-org/claude-marketplace.git
+**If your git doesn't work with SSH (or prefer HTTPS):**
+```bash
+/plugin marketplace add https://github.com/docker/claude-marketplace.git
 ```
 
 ### Installing the Plugin
 
+Once the marketplace is added, you can browse available plugins and install the Docker MCP Gateway plugin:
+
 ```bash
+# Browse all plugins in the docker-tools marketplace
+/plugin
+
+# Install the docker-mcp-gateway plugin
 /plugin install docker-mcp-gateway@docker-tools
 ```
 
+### Troubleshooting Commands
+
+If the MCP Gateway server isn't working as expected, the plugin provides two diagnostic slash commands to help identify and resolve issues:
+
+- **`/docker-mcp-gateway:mcp-status`** - Quick health check showing enabled servers and available tools
+- **`/docker-mcp-gateway:mcp-debug`** - Comprehensive diagnostics to troubleshoot installation and configuration problems
+
+These commands will automatically check your Docker MCP Gateway setup and provide actionable recommendations if problems are found.
+
 ### Verifying Installation
 
-Once installed, the Docker MCP Gateway will be available as an MCP server in Claude Code. You can verify by checking your MCP servers in Claude Code settings.
+Once installed, the Docker MCP Gateway will be available as an MCP server in Claude Code. You can verify by:
+
+1. Running `/docker-mcp-gateway:mcp-status` to see enabled servers and tool count
+2. Checking that MCP tools are available in Claude's toolkit
+3. Using Claude to interact with your configured MCP servers
 
 ## Development
 

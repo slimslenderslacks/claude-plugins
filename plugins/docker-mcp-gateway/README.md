@@ -38,8 +38,8 @@ When enabled, this plugin:
 
 This plugin provides helpful slash commands for managing and debugging Docker MCP Gateway:
 
-- **`/mcp-status`** - Quick status check showing enabled servers and available tools
-- **`/mcp-debug`** - Comprehensive diagnostics for troubleshooting gateway issues
+- **`/docker-mcp-gateway:mcp-status`** - Quick status check showing enabled servers and available tools
+- **`/docker-mcp-gateway:mcp-debug`** - Comprehensive diagnostics for troubleshooting gateway issues
 
 ## Usage
 
@@ -75,10 +75,10 @@ docker mcp config write '<yaml-config>'
 
 Once the plugin is installed and Claude Code is running, the Docker MCP Gateway will automatically start. You can verify this by:
 
-1. Running `/mcp-status` to see enabled servers and tool count
+1. Running `/docker-mcp-gateway:mcp-status` to see enabled servers and tool count
 2. Checking that MCP tools are available in Claude's toolkit
 3. Using Claude to interact with your enabled MCP servers
-4. Running `/mcp-debug` if you encounter any issues
+4. Running `/docker-mcp-gateway:mcp-debug` if you encounter any issues
 
 ## Troubleshooting
 
