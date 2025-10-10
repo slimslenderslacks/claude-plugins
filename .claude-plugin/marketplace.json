@@ -1,0 +1,25 @@
+{
+  "name": "docker-tools",
+  "owner": {
+    "name": "Docker Inc."
+  },
+  "metadata": {
+    "description": "Official Docker plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "docker-mcp-gateway",
+      "source": "./plugins/docker-mcp-gateway",
+      "description": "Integrates Docker MCP Gateway with Claude Code, enabling access to containerized MCP servers",
+      "version": "1.0.0",
+      "author": {
+        "name": "Docker Inc."
+      },
+      "keywords": ["docker", "mcp", "gateway", "containers"],
+      "category": "integration",
+      "license": "MIT",
+      "strict": false
+    }
+  ]
+}
