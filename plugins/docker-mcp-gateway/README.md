@@ -9,7 +9,7 @@ This plugin integrates Docker MCP Gateway with Claude Code, providing seamless a
 1. **Docker Desktop (Recommended)**
    - Version 4.28.0 or later
    - With MCP Toolkit feature enabled
-   - Navigate to: Settings → Features in Development → Enable "MCP Toolkit"
+   - Navigate to: Settings → Beta Features → Enable "Docker MCP Toolkit"
 
 2. **Docker MCP Gateway CLI (Standalone)**
    - Installed independently via: `make docker-mcp` from the [mcp-gateway repository](https://github.com/docker/mcp-gateway)
@@ -86,7 +86,7 @@ Once the plugin is installed and Claude Code is running, the Docker MCP Gateway 
 
 **Error**: `command not found: docker` or `unknown command: mcp`
 
-**Solution**: Ensure Docker Desktop is installed with MCP Toolkit enabled, or install the docker-mcp CLI plugin.
+**Solution**: Ensure Docker Desktop is installed with Docker MCP Toolkit enabled (Settings → Beta Features), or install the docker-mcp CLI plugin.
 
 ### No MCP servers available
 
