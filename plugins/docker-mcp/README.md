@@ -1,4 +1,4 @@
-# Docker MCP Gateway Plugin
+# Docker MCP Plugin
 
 This plugin integrates Docker MCP Gateway with Claude Code, providing seamless access to containerized MCP servers.
 
@@ -38,8 +38,8 @@ When enabled, this plugin:
 
 This plugin provides helpful slash commands for managing and debugging Docker MCP Gateway:
 
-- **`/docker-mcp-gateway:mcp-status`** - Quick status check showing enabled servers and available tools
-- **`/docker-mcp-gateway:mcp-debug`** - Comprehensive diagnostics for troubleshooting gateway issues
+- **`/docker-mcp:gateway-status`** - Quick status check showing enabled servers and available tools
+- **`/docker-mcp:gateway-debug`** - Comprehensive diagnostics for troubleshooting gateway issues
 
 ## Usage
 
@@ -50,7 +50,7 @@ This plugin provides helpful slash commands for managing and debugging Docker MC
 /plugin marketplace add /path/to/claude-marketplace
 
 # Install the plugin
-/plugin install docker-mcp-gateway@docker-tools
+/plugin install docker-mcp@docker
 ```
 
 ### Configuration
@@ -75,10 +75,10 @@ docker mcp config write '<yaml-config>'
 
 Once the plugin is installed and Claude Code is running, the Docker MCP Gateway will automatically start. You can verify this by:
 
-1. Running `/docker-mcp-gateway:mcp-status` to see enabled servers and tool count
+1. Running `/docker-mcp:gateway-status` to see enabled servers and tool count
 2. Checking that MCP tools are available in Claude's toolkit
 3. Using Claude to interact with your enabled MCP servers
-4. Running `/docker-mcp-gateway:mcp-debug` if you encounter any issues
+4. Running `/docker-mcp:gateway-debug` if you encounter any issues
 
 ## Troubleshooting
 
