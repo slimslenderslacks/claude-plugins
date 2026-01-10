@@ -1,9 +1,11 @@
 {
   "mcpServers": {
     "mcp-gateway": {
-      "command": "docker",
-      "args": ["mcp", "gateway", "run"],
-      "env": {}
+      "type": "http", 
+      "url": "http://localhost:${MCP_GATEWAY_PORT}",
+      "headers": {
+        "Authorization": "Bearer ${MCP_GATEWAY_AUTH_TOKEN}"
+      }
     }
   }
 }
