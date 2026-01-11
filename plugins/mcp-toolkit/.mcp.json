@@ -2,9 +2,9 @@
   "mcpServers": {
     "mcp-gateway": {
       "type": "http", 
-      "url": "http://localhost:${MCP_GATEWAY_PORT}",
+      "url": "http://localhost:8811/mcp",
       "headers": {
-        "Authorization": "Bearer ${MCP_GATEWAY_AUTH_TOKEN}"
+        "Authorization": "Bearer hello"
       }
     }
   }
