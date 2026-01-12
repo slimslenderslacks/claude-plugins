@@ -2,7 +2,7 @@
   "mcpServers": {
     "mcp-gateway": {
       "type": "http", 
-      "url": "http://localhost:8811/mcp",
+      "url": "http://host.docker.internal:8811/mcp",
       "headers": {
         "Authorization": "Bearer hello"
       }
